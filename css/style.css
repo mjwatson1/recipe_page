@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: hsl(30, 54%, 90%);
+  width: 1440px;
+  height: 100%;
+  padding-top: 25px;
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 736px;
+  height: 1708px;
+  margin: auto;
+  border-radius: 12px;
+  padding-left: 20px;
+}
+.card_img {
+  display: block;
+  align-items: center;
+  width: 656px;
+  object-fit: fill;
+  height: 300px;
+  padding-left: 75px;
+  padding-top: 25px;
+  border-radius: 12px 12px 12px 12px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* The designs were created to the following widths */
+
+/* Mobile- 375px */
+/* - Desktop: 1440px */
+
+/* ## Colors
+
+### Primary
+
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */

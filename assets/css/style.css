@@ -30,87 +30,105 @@
 - Weights: 400, 600, 700
 */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*END STYLE GUIDE*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
-h1 {
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  background-color: hsl(30, 54%, 90%);
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 736px;
+  margin: auto;
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.card_img {
+  align-items: center;
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.introduction {
   margin-top: 40px;
-  margin-bottom: 24px;
+}
+
+.introduction h1 {
   font-size: 40px;
   color: hsl(24, 5%, 18%);
   font-family: Young Serif;
   font-weight: 700;
 }
 
-p {
-  font-size: 16px;
-}
-ol {
-  padding-left: 20px;
-  padding-left: 40;
-}
-
-li {
-  list-style-position: inside;
-}
-.introduction {
-  margin-bottom: 20px;
-}
 .introduction p {
-  font-size: 17px;
   font-family: Outfit;
   font-weight: 400;
   color: hsl(30, 10%, 34%);
-  line-height: 1.6;
-}
-.container {
-  display: flex;
-  background-color: hsl(30, 54%, 90%);
-  width: 1440px;
-  height: 100%;
-  padding-top: 25px;
+  color: hsl(30, 10%, 34%);
 }
 
-.card {
-  background-color: hsl(0, 0%, 100%);
-  width: 736px;
-  height: 1708px;
-  margin: auto;
-  border-radius: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.card_img {
-  display: block;
-  align-items: center;
-  width: 736px;
-  object-fit: fill;
-  height: 300px;
-  padding-top: 20px;
-  padding-right: 40px;
-  border-radius: 12px 12px 12px 12px;
-}
 .preparation {
   margin-top: 32px;
   background-color: hsl(330, 100%, 98%);
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px;
+  color: hsl(30, 10%, 34%);
+  border-radius: 12px;
 }
+
+.preparation li:last-child {
+  margin-bottom: 0px;
+}
+
 .preparation h3 {
   margin-bottom: 16px;
   font-size: 20px;
   font-family: Outfit;
   color: hsl(332, 51%, 32%);
 }
+
 .preparation li {
+  list-style-position: inside;
   font-family: Outfit;
   font-size: 16px;
   font-weight: 400;
+  color: hsl(30, 10%, 34%);
+  height: 24px;
+  margin: 8px;
 }
+
+.ingredients {
+  margin-top: 32px;
+  padding-bottom: 24px;
+  color: hsl(30, 10%, 34%);
+  border-bottom: 1px solid;
+  border-color: #e6e0d4;
+}
+
+.ingredients li:last-child {
+  margin-bottom: 0px;
+}
+
 .ingredients h2 {
   color: hsl(14, 45%, 36%);
   font-size: 28px;
@@ -118,17 +136,108 @@ li {
   font-weight: 400;
   margin-bottom: 24px;
 }
-.ingredients {
+
+.ingredients li {
+  height: 24px;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  text-indent: 5px;
+  list-style-position: inside;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.instructions {
   margin-top: 32px;
+  color: hsl(30, 10%, 34%);
   padding-bottom: 32px;
+  border-bottom: 1px solid;
+  border-color: #e6e0d4;
+}
+
+.instructions h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 28px;
+  font-family: Young Serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.instructions li {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 8px;
+}
+
+.instructions ol {
+  padding-left: 19px;
+}
+
+.instructions li:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.nutrition {
+  margin-top: 32px;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition p {
+  margin-bottom: 24px;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 28px;
+  font-family: Young Serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 td {
-  width: 75%;
-  padding: 8px;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.1rem solid lightgray;
+  padding: 1rem 1.5rem;
+  width: 50%;
 }
 
-tr {
+td:nth-child(1) {
+  padding-left: 3rem;
 }
+
+td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.rm-border {
+  border-bottom: none;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* When the browser is at least 600px and below */
+@media screen and (max-width: 600px) {
+  .card_img {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
